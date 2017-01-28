@@ -1,4 +1,4 @@
-module Fontina::Formats::Shared::LanguageCodes
+module Fontina::LanguageCodes
 
   MAC = {
       0 => 'en',

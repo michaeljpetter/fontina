@@ -1,6 +1,6 @@
-module Fontina::Formats
+module Fontina
   
-  module OpenType
+  module Formats::OpenType
     OT_VERSION = 0x4f54544f  # OTTO
     TT_VERSION = 0x00010000
 
@@ -71,8 +71,8 @@ module Fontina::Formats
   
     LANGUAGES = {
       unicode: { 0 => nil }.freeze,
-      mac: { 0xffff => nil }.merge!(Shared::LanguageCodes::MAC).freeze,
-      windows: Shared::LanguageCodes::WINDOWS,
+      mac: { 0xffff => nil }.merge!(LanguageCodes::MAC).freeze,
+      windows: LanguageCodes::WINDOWS,
     }.freeze
   end
 

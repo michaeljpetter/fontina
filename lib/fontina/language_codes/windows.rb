@@ -1,4 +1,4 @@
-module Fontina::Formats::Shared::LanguageCodes
+module Fontina::LanguageCodes
 
   WINDOWS = {
     0x0401 => 'ar-SA',

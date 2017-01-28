@@ -14,8 +14,8 @@ module Fontina
       def container
         @container ||= begin
           %w[
-            shared/language_codes/mac
-            shared/language_codes/windows
+            ../language_codes/mac
+            ../language_codes/windows
             open_type/constants
             open_type/name_table
             open_type/head_table
