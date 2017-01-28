@@ -3,7 +3,7 @@
   faraday
   faraday_middleware
   mores
-].each { |gem| require gem }
+].each { |lib| require lib }
 
 module Fontina
   module Fetchers end
