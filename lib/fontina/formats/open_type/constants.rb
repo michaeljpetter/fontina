@@ -1,18 +1,18 @@
 module Fontina
-  
+
   module Formats::OpenType
     OT_VERSION = 0x4f54544f  # OTTO
     TT_VERSION = 0x00010000
 
     FW_NORMAL = 400
     FW_BOLD   = 700
-  
+
     PLATFORMS = {
       0 => :unicode,
       1 => :mac,
       3 => :windows,
     }.freeze
-  
+
     ENCODINGS = {
       unicode: {
          0 => :unicode_1_0,
@@ -20,7 +20,7 @@ module Fontina
          3 => :unicode_2_0_bmp,
          4 => :unicode_2_0,
       }.freeze,
-  
+
       mac: {
          0 => :roman,
          1 => :japanese,
@@ -56,19 +56,19 @@ module Fontina
         31 => :sindhi,
         32 => :uninterpreted,
       }.freeze,
-  
+
       windows: {
          0 => :symbol,
-         1 => :unicode_ucs2_bmp,
-         2 => :shift_jis,
-         3 => :prc,
-         4 => :big5,
+         1 => Encoding::UCS_2BE,
+         2 => Encoding::Shift_JIS,
+         3 => Encoding::GBK,
+         4 => Encoding::Big5,
          5 => :wansung,
          6 => :johab,
-        10 => :unicode_ucs4,
+        10 => Encoding::UCS_4BE,
       }.freeze,
     }.freeze
-  
+
     LANGUAGES = {
       unicode: { 0 => nil }.freeze,
       mac: { 0xffff => nil }.merge!(LanguageCodes::MAC).freeze,

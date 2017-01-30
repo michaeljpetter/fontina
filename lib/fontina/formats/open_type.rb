@@ -16,6 +16,7 @@ module Fontina
           %w[
             ../language_codes/mac
             ../language_codes/windows
+            shared/e_string
             open_type/constants
             open_type/name_table
             open_type/head_table

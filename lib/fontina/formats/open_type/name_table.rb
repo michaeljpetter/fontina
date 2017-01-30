@@ -15,7 +15,7 @@ module Fontina::Formats::OpenType
     uint16 :offs
 
     delayed_io :string, read_abs_offset: -> { addr + string_offs + offs } do
-      string length: :len
+      e_string length: :len, encoding: -> { encoding.value if encoding.value.is_a? Encoding }
     end
   end
 
