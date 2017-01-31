@@ -14,12 +14,8 @@ module Fontina
     }.freeze
 
     ENCODINGS = {
-      unicode: {
-         0 => :unicode_1_0,
-         1 => :unicode_1_1,
-         3 => :unicode_2_0_bmp,
-         4 => :unicode_2_0,
-      }.freeze,
+      unicode:
+        (0..4).each_with_object(Encoding::UTF_16BE).to_h.freeze,
 
       mac: {
          0 => :roman,
