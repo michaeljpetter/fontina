@@ -1,6 +1,6 @@
-module Fontina::LanguageCodes
+module Fontina::Windows
 
-  WINDOWS = {
+  LANGUAGE_CODES = {
     0x0401 => 'ar-SA',
     0x0402 => 'bg-BG',
     0x0403 => 'ca-ES',

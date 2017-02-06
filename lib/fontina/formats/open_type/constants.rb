@@ -67,8 +67,8 @@ module Fontina
 
     LANGUAGES = {
       unicode: { 0 => nil }.freeze,
-      mac: { 0xffff => nil }.merge!(LanguageCodes::MAC).freeze,
-      windows: LanguageCodes::WINDOWS,
+      mac: { 0xffff => nil }.merge!(Mac::LANGUAGE_CODES).freeze,
+      windows: Windows::LANGUAGE_CODES,
     }.freeze
   end
 

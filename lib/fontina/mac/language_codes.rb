@@ -1,6 +1,6 @@
-module Fontina::LanguageCodes
+module Fontina::Mac
 
-  MAC = {
+  LANGUAGE_CODES = {
       0 => 'en',
       1 => 'fr',
       2 => 'de',

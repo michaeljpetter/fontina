@@ -14,7 +14,7 @@ module Fontina
       def container
         @container ||= begin
           %w[
-            ../language_codes/windows
+            ../windows/language_codes
             shared/p_string
             fon/constants
             fon/dos_header
@@ -64,7 +64,7 @@ module Fontina
           .flat_map(&:data).map(&:locale)
           .first
 
-        LanguageCodes::WINDOWS[language_id]
+        Windows::LANGUAGE_CODES[language_id]
       end
 
       def get_rsrc_data(fon, type)
