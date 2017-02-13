@@ -45,6 +45,7 @@ module Fontina
             .flat_map(&:dir).map(&:entry)
             .map do |e|
               Font[
+                [],
                 [QualifiedName[e.face_name, :windows, language]],
                 e.font_type[0] == 1 ? :vector : :raster,
                 e.points,

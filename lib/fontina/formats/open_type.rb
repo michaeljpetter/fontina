@@ -35,10 +35,11 @@ module Fontina
         name_records = get_table(ot, 'name').names
 
         Package[
-          name_records.find_all { |n| n.name_id == 4 }
-            .map { |n| QualifiedName[n.string, n.platform.value, n.language.value] },
+          [],
 
           [Font[
+            name_records.find_all { |n| n.name_id == 4 }
+              .map { |n| QualifiedName[n.string, n.platform.value, n.language.value] },
             name_records.find_all { |n| n.name_id == 1 }
               .map { |n| QualifiedName[n.string, n.platform.value, n.language.value] },
             :vector,

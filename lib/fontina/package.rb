@@ -6,7 +6,7 @@ module Fontina
   )
 
   Font = Mores::ImmutableStruct.new(
-    *%i[family_names type points weight italic underline strikeout],
+    *%i[names family_names type points weight italic underline strikeout],
     strict: true
   )
 
