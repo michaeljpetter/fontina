@@ -14,9 +14,9 @@ end
 
 %w[
   version
-  fetcher
-  format
   package
+  format
+  fetcher
   meta_package
 ].each { |file| require "fontina/#{file}" }
 
