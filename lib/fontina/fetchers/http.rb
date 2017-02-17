@@ -24,7 +24,7 @@ module Fontina
     end
 
     def get_filename(response)
-      get_attachment_filename(response) || File.basename(response.env.url.path)
+      get_attachment_filename(response) || File.basename(URI.decode response.env.url.path)
     end
 
     def get_attachment_filename(response)
