@@ -18,7 +18,7 @@ end
   format
   fetcher
   meta_package
-].each { |file| require "fontina/#{file}" }
+].each { |file| require_relative "fontina/#{file}" }
 
 module Fontina
 
