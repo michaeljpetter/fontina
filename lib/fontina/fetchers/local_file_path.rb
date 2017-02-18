@@ -1,5 +1,3 @@
-require 'pathname'
-
 module Fontina
 
   class Fetchers::LocalFilePath
@@ -8,7 +6,7 @@ module Fontina
     def fetch(location)
       return super unless location.is_a? String
 
-      Result[Pathname.new(location).binread, File.basename(location)]
+      Result[IO.binread(location), File.basename(location)]
     end
   end
 

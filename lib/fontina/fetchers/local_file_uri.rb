@@ -1,5 +1,4 @@
 require 'uri'
-require 'pathname'
 
 module Fontina
 
@@ -14,7 +13,7 @@ module Fontina
 
       path = URI.decode location.path
 
-      Result[Pathname.new(path).binread, File.basename(path)]
+      Result[IO.binread(path), File.basename(path)]
     end
   end
 
