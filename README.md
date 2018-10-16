@@ -1,7 +1,6 @@
 # Fontina
 
-[![Version](http://img.shields.io/gem/v/fontina.svg)                        ](https://rubygems.org/gems/fontina)
-[![Travis ](https://img.shields.io/travis/michaeljpetter/fontina/master.svg)](https://travis-ci.org/michaeljpetter/fontina)
+[![Version](http://img.shields.io/gem/v/fontina.svg)](https://rubygems.org/gems/fontina)
 
 Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/fontina`. To experiment with that code, run `bin/console` for an interactive prompt.
 
